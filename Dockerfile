@@ -1,7 +1,7 @@
 FROM ruby:2.7.6
 
 ENV LANG C.UTF-8
-ENV APP_HOME /testApp
+ENV APP_HOME /testRails
 
 RUN apt-get update -qq && apt-get install -y build-essential nodejs npm python locales && npm install --global yarn
 RUN rm -rf /var/lib/apt/lists/*
